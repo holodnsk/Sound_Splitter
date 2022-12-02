@@ -66,8 +66,9 @@ def save_song(song, filename):
 
 print ("'Sound Splitter' splits your audio (wav, mp3, wma, ogg, aac, ...) or video (mp4, avi, flv, ...)")
 print("Be patient, this process may take a couple of minutes, depending on the length of the audio/video file.")
-for filename in sorted(os.listdir()):
 
+for filename in sorted(os.listdir("in")):
+    filename = "in\\"+filename
     #-------------------------------------------------------------------------
     #------------- MAIN: splits large mp3, wav files to smaller parts
     #------------- so that they can be easier uploaded in the browser applications
